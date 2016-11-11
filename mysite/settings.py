@@ -134,11 +134,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': os.environ['RDS_DB_NAME'],
-            'USER': os.environ['RDS_USERNAME'],
-            'PASSWORD': os.environ['RDS_PASSWORD'],
-            'HOST': os.environ['RDS_HOSTNAME'],
-            'PORT': os.environ['RDS_PORT'],
+            'NAME': os.environ['aagcjyp1t98bir'],
+            'USER': os.environ['ebroot'],
+            'PASSWORD': os.environ['mitchmitchmitch'],
+            'HOST': os.environ['aagcjyp1t98bir.captxisrucip.us-west-2.rds.amazonaws.com'],
+            'PORT': os.environ['5432'],
         }
 }
 
@@ -206,9 +206,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = '/static/'
 
-
 STATICFILES_DIRS = (
     # SECURITY WARNING: this next line must be commented out at deployment
     BASE_DIR,
 )
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
