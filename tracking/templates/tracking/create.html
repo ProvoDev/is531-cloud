@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>IS 531 Project 3</title>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Mr Robot Technology</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="User ID" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Add New Machine</h1>
+        <p>This website is only to be used according to authorized access for Mr Robot Technology's offial employees. Unauthorized access will be persecuted.</p>
+        <p>If you experience any issues, contact <a href="mailto:techsupport@MrRobotTech.com">techsupport@MrRobotTech.com</a></p>
+    	<p>
+    		<a class="btn btn-primary btn-lg" href="/tracking/search" role="button">Search for Machine Details</a>
+        	<a class="btn btn-primary btn-lg" href="/tracking/create" role="button">Add New Machine Details</a>
+        	<a class="btn btn-primary btn-lg" href="/tracking/data" role="button">Manage Database</a>
+    	</p>
+      </div>
+    </div>
+
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="location">Location:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="location" placeholder="Enter location">
+        </div>
+      
+      
+        <label class="control-label col-sm-2" for="tag">Machine Tag ID:</label>
+        <div class="col-sm-10"> 
+          <input type="text" class="form-control" id="tag" placeholder="Enter Tag ID">
+        </div>
+      
+      
+        <label class="control-label col-sm-2" for="manufacturer">Manufacturer:</label>
+        <div class="col-sm-10"> 
+          <input type="text" class="form-control" id="manufacturer" placeholder="Enter Manufacturer">
+        </div>
+      
+      
+        <label class="control-label col-sm-2" for="part">Manufacturer Part #:</label>
+        <div class="col-sm-10"> 
+          <input type="text" class="form-control" id="part" placeholder="Enter part">
+        </div>
+      
+      
+        <label class="control-label col-sm-2" for="description">Description:</label>
+        <div class="col-sm-10"> 
+          <input type="longtext" class="form-control" id="description" placeholder="Enter Description">
+        </div>
+      
+      
+        <label class="control-label col-sm-2" for="date">Date Installed:</label>
+        <div class="col-sm-10"> 
+          <input type="text" class="form-control" id="date" placeholder="Enter Date Installed">
+        </div>
+      
+      
+        <label class="control-label col-sm-2" for="notes">Maintainance Notes:</label>
+        <div class="col-sm-10"> 
+          <input type="text" class="form-control" id="notes" placeholder="Enter Maintainance Notes">
+        </div>
+      </div>
+      
+      
+      <div class="form-group"> 
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+	</body>
+</html>

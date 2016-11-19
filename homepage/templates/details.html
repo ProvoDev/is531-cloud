@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>IS 531 Project 3</title>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Mr Robot Technology</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="User ID" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Item Details</h1>
+        <p>This website is only to be used according to authorized access for Mr Robot Technology's offial employees. Unauthorized access will be persecuted.</p>
+        <p>If you experience any issues, contact <a href="mailto:techsupport@MrRobotTech.com">techsupport@MrRobotTech.com</a></p>
+    	<p>
+    		<a class="btn btn-primary btn-lg" href="search.html" role="button">Search for Machine Details</a>
+        	<a class="btn btn-primary btn-lg" href="create.html" role="button">Add New Machine Details</a>
+        	<a class="btn btn-primary btn-lg" href="data.html" role="button">Manage Database</a>
+    	</p>
+      </div>
+    </div>
+
+    <table class="table table-hover ">
+      <thead>
+      <tr>
+        <th data-field="location">Location</th>
+        <th data-field="tag">Tag ID</th>
+        <th data-field="manufacturer">Manufacturer</th>
+        <th data-field="part">Manufacturer Part #</th>
+        <th data-field="description">Description</th>
+        <th data-field="date">Date Installed</th>
+        <th data-field="notes">Maintainance Notes</th>
+      </tr>
+      </thead>
+      <tbody>
+      <!-- For Each- -->
+        <tr>
+          <td>Provo, UT</td>
+          <td>20123012302</td>
+          <td>Lockheed Martin</td>
+          <td>TAL-92034</td>
+          <td>I honestly don't know what this part is. It's used for stuff though.</td>
+          <td>8/12/14</td>
+          <td>NA</td>
+          <td><a href="edit">Edit</a></td>
+        </tr>
+      <!-- End For Each -->
+      </tbody>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+	</body>
+</html>
