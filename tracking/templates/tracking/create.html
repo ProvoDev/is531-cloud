@@ -62,47 +62,48 @@
       </div>
     </div>
 
-    <form class="form-horizontal">
+    <form class="form-horizontal" action="/tracking/store" method="POST">
+    {% csrf_token %}
       <div class="form-group">
         <label class="control-label col-sm-2" for="location">Location:</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="location" placeholder="Enter location">
+          <input type="text" class="form-control" name="location" placeholder="Enter location">
         </div>
       
       
         <label class="control-label col-sm-2" for="tag">Machine Tag ID:</label>
         <div class="col-sm-10"> 
-          <input type="text" class="form-control" id="tag" placeholder="Enter Tag ID">
+          <input type="text" class="form-control" name="tag" placeholder="Enter Tag ID">
         </div>
       
       
         <label class="control-label col-sm-2" for="manufacturer">Manufacturer:</label>
         <div class="col-sm-10"> 
-          <input type="text" class="form-control" id="manufacturer" placeholder="Enter Manufacturer">
+          <input type="text" class="form-control" name="manufacturer" placeholder="Enter Manufacturer">
         </div>
       
       
         <label class="control-label col-sm-2" for="part">Manufacturer Part #:</label>
         <div class="col-sm-10"> 
-          <input type="text" class="form-control" id="part" placeholder="Enter part">
+          <input type="number" class="form-control" name="part" placeholder="Enter part">
         </div>
       
       
         <label class="control-label col-sm-2" for="description">Description:</label>
         <div class="col-sm-10"> 
-          <input type="longtext" class="form-control" id="description" placeholder="Enter Description">
+          <input type="longtext" class="form-control" name="description" placeholder="Enter Description">
         </div>
       
       
         <label class="control-label col-sm-2" for="date">Date Installed:</label>
         <div class="col-sm-10"> 
-          <input type="text" class="form-control" id="date" placeholder="Enter Date Installed">
+          <input type="date" class="form-control" name="date" placeholder="Enter Date Installed">
         </div>
       
       
         <label class="control-label col-sm-2" for="notes">Maintainance Notes:</label>
         <div class="col-sm-10"> 
-          <input type="text" class="form-control" id="notes" placeholder="Enter Maintainance Notes">
+          <input type="text" class="form-control" name="notes" placeholder="Enter Maintainance Notes">
         </div>
       </div>
       

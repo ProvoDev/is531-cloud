@@ -78,8 +78,9 @@
               </thead>
               <tbody>
               <!-- For Each- -->
-                <tr>
+                
                   {% for item in assets %}
+                  <tr>
                     <td>{{ item.location }}</td>
                     <td>{{ item.id }}</td>
                     <td>{{ item.manufacturer }}</td>
@@ -89,9 +90,10 @@
                     <td>{{ item.maintenance_notes }}</td>
                     <td><a class="btn btn-primary" href="/tracking/detail/{{ item.id }}">Edit</a></td>
                     <td><a class="btn btn-danger" href="/tracking/delete/{{ item.id }}">Delete</a></td>
+                    </tr>
                   {% endfor %}
 
-                </tr>
+                
               <!-- End For Each -->
               <tr>
               </tr>

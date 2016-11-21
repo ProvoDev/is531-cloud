@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 
 from .models import asset_catalog
@@ -58,3 +58,34 @@ def data(request):
 
 
     return HttpResponse(template.render(context, request))
+
+def store(request):
+
+    asset = asset_catalog()
+    asset.location = request.POST['location']
+    asset.organization_tag = request.POST['tag']
+    asset.manufacturer_part_num = request.POST['part']
+    asset.manufacturer = request.POST['manufacturer']
+    asset.description = request.POST['description']
+    asset.date_implemented = request.POST['date']
+    asset.maintenance_notes = request.POST['notes']
+
+    asset.save()
+
+    return HttpResponseRedirect('/tracking/data');
+
+def update(request, asset_catalog_id):
+
+    asset = asset_catalog.objects.get(id=asset_catalog_id)
+
+    asset.location = request.POST['location']
+    asset.organization_tag = request.POST['tag']
+    asset.manufacturer_part_num = request.POST['part']
+    asset.manufacturer = request.POST['manufacturer']
+    asset.description = request.POST['description']
+    asset.date_implemented = request.POST['date']
+    asset.maintenance_notes = request.POST['notes']
+
+    asset.save()
+
+    return HttpResponseRedirect('/tracking/data');
