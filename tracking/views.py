@@ -89,3 +89,11 @@ def update(request, asset_catalog_id):
     asset.save()
 
     return HttpResponseRedirect('/tracking/data');
+
+def searchresults(request):
+    asset = asset_catalog.objects.filter(organization_tag=request.POST['tag']).first()
+
+    url = '/tracking/detail/'+str(asset.pk)
+
+    print(asset.location)
+    return HttpResponseRedirect(url);
