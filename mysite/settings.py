@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'homepage',
+    # 'tracking',
+    # 'is531-cloud',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -86,10 +89,10 @@ DATABASES = {
         # }
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'cloud',
-            'USER': 'postgres',
-            'PASSWORD': 'password',
-            'HOST': 'localhost',
+            'NAME': 'clouddb',
+            'USER': 'ebroot',
+            'PASSWORD': 'mitchmitchmitch',
+            'HOST': 'clouddb.captxisrucip.us-west-2.rds.amazonaws.com',
             'PORT': '5432',
         }
 }
